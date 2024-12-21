@@ -1,6 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import Avatar from './Avatar';
-import avatar from 'assets/avatar.png';
+import avatar from '../assets/avatar.png';
 
 const Hero = () => {
   return (
