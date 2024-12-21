@@ -1,5 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import Avatar from './Avatar';
+import avatar from '/Users/fahimrashid/Desktop/project/assets/avatar.png';
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-32">
         <div className="max-w-3xl mx-auto text-center">
           <Avatar 
-            imageUrl="/assets/avatar.png"
+            imageUrl={avatar}
             alt="Your Avatar"
           />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in dark:text-white">
