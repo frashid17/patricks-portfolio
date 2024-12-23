@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 py-32">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Use image URL directly here */}
+          
           <Avatar 
             imageUrl="https://i.imgur.com/T82r4UG.png" 
             alt="Your Avatar"
@@ -15,7 +15,7 @@ const Hero = () => {
             Hi, I'm <span className="text-blue-600 dark:text-blue-400">Patrick Mwangi</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 animate-fade-in-delay">
-            Full Stack Developer & UI/UX Enthusiast
+            Software Engineer & UI/UX Enthusiast
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-delay-2">
             <a
