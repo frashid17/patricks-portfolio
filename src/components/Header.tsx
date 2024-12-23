@@ -70,7 +70,7 @@ const Header = () => {
                 <Github className="w-5 h-5 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/patrick-mwangi-d786"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -134,7 +134,7 @@ const Header = () => {
                   <Github className="w-5 h-5 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/patrick-mwangi-d786" 
                   target="_blank"
                   rel="noopener noreferrer"
                 >
