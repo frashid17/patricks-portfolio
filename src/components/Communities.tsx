@@ -1,5 +1,6 @@
 import { Twitter, Linkedin } from 'lucide-react';
 
+
 const communities = [
   {
     name: "React Developer Community",
