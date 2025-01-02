@@ -1,17 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Mail, Github, Linkedin, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+  const [status, setStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    setStatus({ type: null, message: '' });
+
+    // Replace these with your actual EmailJS credentials
+    const PUBLIC_KEY = "AGzRshrSCufD-8sk6";
+    const TEMPLATE_ID = "template_s3702js";
+    const SERVICE_ID = "service_jxjrjgy";
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current!, PUBLIC_KEY)
+      .then(() => {
+        setStatus({
+          type: 'success',
+          message: 'Message sent successfully!'
+        });
+        setFormData({ name: '', email: '', message: '' });
+      })
+      .catch(() => {
+        setStatus({
+          type: 'error',
+          message: 'Failed to send message. Please try again.'
+        });
+      });
   };
 
   return (
@@ -32,32 +57,40 @@ const Contact = () => {
 
           <div className="space-y-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:frashid274@gmail.com"
               className="flex items-center text-gray-400 hover:text-white transition-colors"
             >
               <Mail className="mr-4" size={24} />
-              your.email@example.com
+              Patrick Mwangi
             </a>
             
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/frashid17"
               className="flex items-center text-gray-400 hover:text-white transition-colors"
             >
               <Github className="mr-4" size={24} />
-              github.com/yourusername
+              frashid17
             </a>
             
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/patrick-mwangi-d786"
               className="flex items-center text-gray-400 hover:text-white transition-colors"
             >
               <Linkedin className="mr-4" size={24} />
-              linkedin.com/in/yourusername
+              Patrick Mwangi
             </a>
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+          {status.type && (
+            <div className={`p-4 rounded-lg ${
+              status.type === 'success' ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'
+            }`}>
+              {status.message}
+            </div>
+          )}
+          
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">
               Name
@@ -65,6 +98,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
+              name="user_name"
               className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -79,6 +113,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              name="user_email"
               className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -92,6 +127,7 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={4}
               className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500"
               value={formData.message}
