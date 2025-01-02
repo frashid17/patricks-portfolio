@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 py-32 md:py-40">
         <div className="relative z-10 flex flex-col items-center">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80"
+            src="https://i.imgur.com/T82r4UG.png"
             alt="Patrick"
             className="w-32 h-32 rounded-full mb-8 border-4 border-blue-500 shadow-xl"
           />
