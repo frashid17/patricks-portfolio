@@ -9,7 +9,7 @@ const Skills = () => {
     },
     {
       category: 'Backend Development',
-      items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+      items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs','Django'],
       progress: 85
     },
     {
