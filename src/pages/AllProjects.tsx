@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import Exhibitions from '../components/Exhibitions';
 import { projects } from '../data/projects';
