@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus({ type: null, message: '' });
 
-    // Replace these with your actual EmailJS credentials
+    
     const PUBLIC_KEY = "AGzRshrSCufD-8sk6";
     const TEMPLATE_ID = "template_s3702js";
     const SERVICE_ID = "service_jxjrjgy";
