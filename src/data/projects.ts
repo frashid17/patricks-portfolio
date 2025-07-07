@@ -29,8 +29,8 @@ export const projects: Project[] = [
     description: 'A dashboard that manages and shows customers registered on the site, including their invoices and managing them by offering CRUD functionalities and analytic tools.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     technologies: ['Next.js', 'TypeScript', 'Analytics', 'Dashboard'],
-    github: 'https://github.com/yourusername/financial-dashboard',
-    live: 'https://finance-dashboard-demo.com'
+    github: 'https://github.com/frashid17/nextjs',
+    live: 'https://nextjs-dashboard-ten-snowy-14.vercel.app/'
   },
   {
     title: 'Safari Website',
