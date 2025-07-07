@@ -64,6 +64,14 @@ const Resume: React.FC = () => {
                   'Managed and organized large datasets with high attention to detail, ensuring data accuracy and consistency. Used Microsoft Excel and Google Sheets for data entry, validation, and reporting. Improved overall efficiency by automating repetitive tasks with formulas and macros.',
                 skills: ['Microsoft Excel', 'Google Sheets', 'Data Accuracy'],
               },
+              {
+                title: 'Lead Software Engineer',
+                company: 'Xterns by darey.io',
+                period: 'Jan 2025 - Present',
+                description:
+                  'Lead Software Engineer in Xterns where i actively manage company xterns by equipping them with hands on skills.',
+                skills: ['Community Engagement', 'Software Development', 'Mentorship'],
+              }
             ].map((job, index) => (
               <div key={index} className="bg-gray-800/50 rounded-lg p-6">
                 <div className="flex flex-wrap justify-between items-start mb-4">

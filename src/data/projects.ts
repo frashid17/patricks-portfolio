@@ -14,7 +14,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     technologies: ['Next.js', 'Tailwind CSS', 'Booking System', 'Hotel Management'],
     github: 'https://github.com/yourusername/sairock-hotel',
-    live: 'https://sairock-hotel.com'
+    live: 'https://sairock.co.ke/'
   },
   {
     title: 'The Pwani Leather House',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     technologies: ['E-commerce', 'Next.js', 'Tailwind CSS', 'Payment Integration'],
     github: 'https://github.com/yourusername/pwani-leather',
-    live: 'https://pwanileather.com'
+    live: 'https://www.thepwanileatherhouse.com/'
   },
   {
     title: 'Financial Dashboard',
@@ -32,5 +32,20 @@ export const projects: Project[] = [
     github: 'https://github.com/yourusername/financial-dashboard',
     live: 'https://finance-dashboard-demo.com'
   },
-  // ... rest of the projects remain the same but with added github and live properties
+  {
+    title: 'Safari Website',
+    description: 'A website that provides information about the safari tours, including booking options and tour details.',
+    image: '/duruma.jpg',
+    technologies: ['React.js', 'Tailwind CSS', 'Portfolio'],
+    github: 'https://github.com/frashid17/duruma-tours',
+    live: 'https://duruma-tours-safaris.netlify.app/'
+  },
+  {
+    title: 'Chat Application',
+    description: 'A real-time chat application that allows users to communicate with each other in different rooms.',
+    technologies: ['React.js', 'Socket.io', 'Node.js', 'Express'],
+    image: '/chat.png',
+    github: 'https://github.com/frashid17/chat-app',
+    live: 'https://chat-app-c804a.web.app/'
+  },
 ];
